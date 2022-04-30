@@ -46,7 +46,7 @@ download_release() {
       ;;
 
     *)
-      platform=platform
+      platform=$platform
       ;;
   esac
 
@@ -57,7 +57,7 @@ download_release() {
       ;;
 
     *)
-      arch=arch
+      arch=$arch
       ;;
   esac
 

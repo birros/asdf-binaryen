@@ -25,7 +25,7 @@ sort_versions() {
 
 list_github_tags() {
   curl -s https://api.github.com/repos/WebAssembly/binaryen/releases |
-  grep tag_name | grep version_ | sed -r 's/^    "tag_name": "version_(.+)",$/\1/'
+    grep tag_name | grep version_ | sed -r 's/^    "tag_name": "version_(.+)",$/\1/'
 }
 
 list_all_versions() {

@@ -41,24 +41,24 @@ download_release() {
 
   platform=$(uname -s | tr "A-Z" "a-z")
   case $platform in
-    darwin)
-      platform=macos
-      ;;
+  darwin)
+    platform=macos
+    ;;
 
-    *)
-      platform=$platform
-      ;;
+  *)
+    platform=$platform
+    ;;
   esac
 
   arch=$(uname -m)
   case $arch in
-    aarch64)
-      arch=arm64
-      ;;
+  aarch64)
+    arch=arm64
+    ;;
 
-    *)
-      arch=$arch
-      ;;
+  *)
+    arch=$arch
+    ;;
   esac
 
   url="$GH_REPO/releases/download/version_${version}/binaryen-version_${version}-${arch}-${platform}.tar.gz"
